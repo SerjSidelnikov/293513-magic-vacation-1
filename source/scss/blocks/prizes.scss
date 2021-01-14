@@ -31,6 +31,15 @@
   line-height: 0.906;
   letter-spacing: -0.04em;
 
+  & .text__word > span {
+    padding-top: 0.1em;
+    padding-right: 0.04em;
+  }
+
+  &.active .text__word > span {
+    transform: translate3d(0, 0, 0);
+  }
+
   @media (min-width: $stop-scaling) {
     font-size: 48px;
   }
